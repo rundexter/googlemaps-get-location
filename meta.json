@@ -4,23 +4,46 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "homeMobileCountryCode",
+            "title":"MCC"
+        },
+        {
+            "id": "homeMobileNetworkCode",
+            "title":"MNC"
+        },
+        {
+            "id": "radioType",
+            "title":"Radio Type"
+        },
+        {
+            "id": "carrier",
+            "title":"Carrier"
+        },
+        {
+            "id": "considerIp",
+            "title":"Fallback IP"
+        },
+        {
+            "id": "cellTowers",
+            "title":"Cell Towers"
+        },
+        {
+            "id": "wifiAccessPoints",
+            "title":"WiFi Access Points"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "location",
+            "title":"Location"
+        },
+        {
+            "id": "accuracy",
+            "title":"Accuracy"
         }
-      */
     ],
+    "icon": "dex-gmaps",
     "title": "Google Maps Get Location" /* Required.A display name for the module */
 }

@@ -61,6 +61,9 @@ module.exports = {
             else if (response && _.parseInt(response.statusCode) !== 200)
                 this.fail(body);
 
+            else if (body && body.error_message)
+                this.fail(body.error_message);
+
             else
                 this.complete(util.pickOutputs(body, pickOutputs));
         }.bind(this));
